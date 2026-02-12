@@ -1,0 +1,8 @@
+environment          = "dev"
+aws_region           = "us-east-1"
+log_retention_days   = 14
+cors_allow_origins   = ["*"]
+
+# Preencher após deploy do Lambda (terraform output)
+lambda_function_name = "paguebem-api-dev"
+lambda_invoke_arn    = "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:paguebem-api-dev/invocations"
